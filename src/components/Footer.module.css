@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   padding: 20px;
-  background-color: lightgray;
+  background-color: var(--footer-bg-color);
   height: auto;
 }
 
@@ -12,11 +12,13 @@
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 10px;
+  color: var(--footer-text-color);
 }
 
 .contactData {
   font-size: 1rem;
   margin: 5px 0;
+  color: var(--footer-text-color);
 }
 
 .contactData a {
@@ -31,6 +33,10 @@
 .contactData svg {
   margin-left: 10px;
   vertical-align: middle;
+}
+
+.techStack {
+  color: var(--footer-text-color);
 }
 
 @media (max-width: 600px) {

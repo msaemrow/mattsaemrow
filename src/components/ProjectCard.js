@@ -8,7 +8,7 @@ export default function ProjectCard({ title, description, techStack, link }) {
       <p className={styles.description}>{description}</p>
       <div className={styles.techStackContainer}>
         {techStack.map((tech) => (
-          <p className={`${styles.tech} tech`}>
+          <p key={tech} className={`${styles.tech} tech`}>
             {tech}{" "}
             <i
               className={`devicon-${tech

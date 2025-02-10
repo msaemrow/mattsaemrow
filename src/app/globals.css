@@ -5,6 +5,8 @@
   --card-bg: #ffffff;
   --border-color: #e5e7eb;
   --shadow-color: rgba(0, 0, 0, 0.1);
+  --footer-bg-color: #374151;
+  --footer-text-color: #f9fafb;
 }
 
 [data-theme="dark"] {
@@ -14,6 +16,8 @@
   --card-bg: #374151;
   --border-color: #4b5563;
   --shadow-color: rgba(255, 255, 255, 0.1);
+  --footer-bg-color: #1f2329;
+  --footer-text-color: #e5e7eb;
 }
 
 html,
