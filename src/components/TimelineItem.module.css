@@ -1,6 +1,14 @@
-.timeline {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  align-items: center;
+.timelineItem {
+  background: var(--card-bg);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 6px var(--shadow-color);
+  padding: 15px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.timelineItem:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
 }

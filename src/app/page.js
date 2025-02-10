@@ -35,32 +35,25 @@ export default function Home() {
     "Problem Solving",
     "Resourceful",
   ];
-  useEffect(() => {
-    gsap.to(".skill", {
-      x: 0,
-      rotation: 360,
-      duration: 2,
-    });
-  }, []);
 
   return (
     <div className={styles.container}>
       <div className={styles.skillsContainer}>
-        <h2>Technologies and Languages</h2>
+        <h2 className={styles.title}>Technologies and Languages</h2>
         <div className={styles.skills}>
           {skills.map((skill) => (
             <Skill key={skill} skill={skill} />
           ))}
         </div>
-        <h2>Soft Skills</h2>
-        <div className={styles.skills}>
+        <h2 className={styles.title}>Soft Skills</h2>
+        <div className={styles.softSkills}>
           {softSkills.map((skill, index) => (
             <SoftSkill key={index} skill={skill} />
           ))}
         </div>
       </div>
       <div className={styles.timelineContainer}>
-        <h2>Career Timeline</h2>
+        <h2 className={styles.title}> Career Timeline</h2>
         <div className={styles.timeline}>
           <TimelineItem
             date="2014"

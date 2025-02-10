@@ -1,3 +1,13 @@
 .skillText {
-  margin: 0 10px;
+  background: var(--card-bg);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 6px var(--shadow-color);
+  padding: 15px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.skillText:hover {
+  transform: scale(1.05);
 }

@@ -20,7 +20,7 @@ export default function ProjectCard({ title, description, techStack, link }) {
           </p>
         ))}
       </div>
-      <p>
+      <p className={styles.linkText}>
         Link:{" "}
         <a
           className={styles.projectLink}

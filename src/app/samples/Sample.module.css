@@ -2,11 +2,45 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  background-color: lightslategray;
+  padding-bottom: 20px;
+  background-color: var(--bg-color);
+  min-height: 100vh;
+}
+
+.pageTitle {
+  text-align: center;
+  font-size: 2rem;
+  text-decoration: underline;
+  color: var(--accent-color);
+  padding-top: 2rem;
 }
 
 .workContainer {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+@media (max-width: 768px) {
+  .pageTitle {
+    font-size: 2.5rem;
+  }
+
+  .workContainer {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .pageTitle {
+    font-size: 2rem;
+  }
+
+  .workContainer {
+    padding: 0 10px;
+    gap: 10px;
+  }
 }

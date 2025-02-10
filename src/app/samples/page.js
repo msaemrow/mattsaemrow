@@ -5,7 +5,7 @@ import ProjectCard from "@/components/ProjectCard";
 export default function WorkSample() {
   return (
     <div className={styles.container}>
-      <h1>Work Samples</h1>
+      <h1 className={styles.pageTitle}>Work Samples</h1>
       <div className={styles.workContainer}>
         <ProjectCard
           key="Project 1"

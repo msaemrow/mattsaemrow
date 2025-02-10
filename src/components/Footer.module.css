@@ -1,8 +1,49 @@
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  height: 30vh;
+  padding: 20px;
   background-color: lightgray;
+  height: auto;
+}
+
+.contactTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.contactData {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+.contactData a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.contactData a:hover {
+  color: #0077b5;
+}
+
+.contactData svg {
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+@media (max-width: 600px) {
+  .contactTitle {
+    font-size: 1.3rem;
+  }
+
+  .contactData {
+    font-size: 0.9rem;
+  }
+
+  .contactData svg {
+    width: 30px;
+    height: 30px;
+  }
 }
