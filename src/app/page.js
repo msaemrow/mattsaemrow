@@ -85,24 +85,6 @@ export default function Home() {
             title="Freelance"
             description="Completing freelance software engineering projects"
           />
-          {/* <p className={`${styles.timelineItem} timelineItem`}>
-            2014: Bachelors Degree
-          </p>
-          <p className={`${styles.timelineItem} timelineItem`}>
-            2016: Masters Degree
-          </p>
-          <p className={`${styles.timelineItem} timelineItem`}>
-            2016-2022: Athletic Trainer
-          </p>
-          <p className={`${styles.timelineItem} timelineItem`}>
-            2023: Site Safety Manager
-          </p>
-          <p className={`${styles.timelineItem} timelineItem`}>
-            2023-2024: Software Engineering Bootcamp
-          </p>
-          <p className={`${styles.timelineItem} timelineItem`}>
-            2024-Current: Freelance Software Engineering
-          </p> */}
         </div>
       </div>
     </div>

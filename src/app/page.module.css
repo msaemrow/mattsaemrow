@@ -32,8 +32,8 @@
 
 .timelineContainer {
   text-align: center;
-  min-height: 100vh;
-  padding: 3rem 0;
+  min-height: 50vh;
+  padding: 1rem 0;
 }
 
 .timeline {
@@ -41,35 +41,10 @@
   flex-direction: column;
   gap: 20px;
   align-items: center;
-}
-
-/* Card-Like Styling for Skills */
-.skill,
-.softSkill,
-.timelineItem {
-  background: var(--card-bg);
-  color: var(--text-color);
-  border: 1px solid var(--border-color);
-  box-shadow: 0 4px 6px var(--shadow-color);
-  padding: 15px;
-  border-radius: 10px;
-  transition: transform 0.3s ease-in-out;
-}
-
-.skill:hover,
-.softSkill:hover,
-.timelineItem:hover {
-  transform: scale(1.05);
+  padding-top: 1rem;
 }
 
 @media (max-width: 600px) {
-  .skills {
-    max-width: 90vh;
-  }
-  .softSkills {
-    max-width: 90vh;
-  }
-
   .title {
     font-size: 1.5rem;
   }
