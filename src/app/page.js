@@ -1,95 +1,117 @@
-import Image from "next/image";
+"use client";
+import { useEffect } from "react";
 import styles from "./page.module.css";
+import "devicon/devicon.min.css";
+import { gsap } from "gsap";
+import TimelineItem from "@/components/TimelineItem";
+import Skill from "@/components/Skill";
+import SoftSkill from "@/components/SoftSkill";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+// gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
-  return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.js</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+  const skills = [
+    "JavaScript",
+    "Python",
+    "React",
+    "Node.js",
+    "Flask",
+    "HTML5",
+    "CSS3",
+    "Next.js",
+    "PostgreSQL",
+    "Bootstrap",
+    "VSCode",
+  ];
 
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+  const softSkills = [
+    "Team Work",
+    "Communication",
+    "Dependable",
+    "Fast Pace Environment",
+    "Task Prioritization and Management",
+    "People Manager",
+    "Problem Solving",
+    "Resourceful",
+  ];
+  useEffect(() => {
+    gsap.to(".skill", {
+      x: 0,
+      rotation: 360,
+      duration: 2,
+    });
+  }, []);
+
+  return (
+    <div className={styles.container}>
+      <div className={styles.skillsContainer}>
+        <h2>Technologies and Languages</h2>
+        <div className={styles.skills}>
+          {skills.map((skill) => (
+            <Skill key={skill} skill={skill} />
+          ))}
         </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+        <h2>Soft Skills</h2>
+        <div className={styles.skills}>
+          {softSkills.map((skill, index) => (
+            <SoftSkill key={index} skill={skill} />
+          ))}
+        </div>
+      </div>
+      <div className={styles.timelineContainer}>
+        <h2>Career Timeline</h2>
+        <div className={styles.timeline}>
+          <TimelineItem
+            date="2014"
+            title="Bachelors Degree"
+            description="Bachelors of Athletic Training and Bachelors of Exercise Science from Gustavus Adolphus College"
           />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
+          <TimelineItem
+            date="2026"
+            title="Masters Degree"
+            description="Masters of Athletic Training from North Dakota State University"
           />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
+          <TimelineItem
+            date="2016-2022"
+            title="Atletic Trainer"
+            description="Work as an athletic training in multiple settings including a physical therapy clinic, boarding school and warehouse"
           />
-          Go to nextjs.org →
-        </a>
-      </footer>
+          <TimelineItem
+            date="2023"
+            title="Site Safety Manager"
+            description="Safety manager at Amazon warehouse supporting a team of 7 safety professionals"
+          />
+          <TimelineItem
+            date="2023-2024"
+            title="Software Engineering Bootcamp"
+            description="Completed Springboards 9 month Software Engineering bootcamp learning full stack development"
+          />
+          <TimelineItem
+            date="2024-Current"
+            title="Freelance"
+            description="Completing freelance software engineering projects"
+          />
+          {/* <p className={`${styles.timelineItem} timelineItem`}>
+            2014: Bachelors Degree
+          </p>
+          <p className={`${styles.timelineItem} timelineItem`}>
+            2016: Masters Degree
+          </p>
+          <p className={`${styles.timelineItem} timelineItem`}>
+            2016-2022: Athletic Trainer
+          </p>
+          <p className={`${styles.timelineItem} timelineItem`}>
+            2023: Site Safety Manager
+          </p>
+          <p className={`${styles.timelineItem} timelineItem`}>
+            2023-2024: Software Engineering Bootcamp
+          </p>
+          <p className={`${styles.timelineItem} timelineItem`}>
+            2024-Current: Freelance Software Engineering
+          </p> */}
+        </div>
+      </div>
     </div>
   );
 }
