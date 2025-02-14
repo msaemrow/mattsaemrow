@@ -36,6 +36,7 @@
 }
 
 .techStack {
+  text-align: center;
   color: var(--footer-text-color);
 }
 

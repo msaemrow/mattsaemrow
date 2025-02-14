@@ -12,7 +12,6 @@ export default function Header() {
   }, [theme]);
 
   const currentPath = usePathname();
-  console.log("CurrentPath", currentPath);
   return (
     <div className={styles.container}>
       <button
@@ -26,11 +25,26 @@ export default function Header() {
         {currentPath === "/samples" ? (
           <>
             <Link className={styles.link} href="/">
-              Home
+              About Me
+            </Link>
+            <Link className={styles.link} href="/skills">
+              Skills
             </Link>
           </>
         ) : currentPath === "/" ? (
           <>
+            <Link className={styles.link} href="/skills">
+              Skills
+            </Link>
+            <Link className={styles.link} href="/samples">
+              Work Samples
+            </Link>
+          </>
+        ) : currentPath === "/skills" ? (
+          <>
+            <Link className={styles.link} href="/">
+              About Me
+            </Link>
             <Link className={styles.link} href="/samples">
               Work Samples
             </Link>

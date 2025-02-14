@@ -1,0 +1,23 @@
+.skillsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 2rem;
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  text-decoration: underline;
+  color: var(--accent-color);
+}
+
+.skills,
+.softSkills {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  max-width: 60vw;
+}
