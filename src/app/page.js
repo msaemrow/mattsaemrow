@@ -1,12 +1,6 @@
-"use client";
-import { useEffect } from "react";
 import styles from "./page.module.css";
 import "devicon/devicon.min.css";
-import { gsap } from "gsap";
 import TimelineItem from "@/components/TimelineItem";
-import Skill from "@/components/Skill";
-import SoftSkill from "@/components/SoftSkill";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 // gsap.registerPlugin(ScrollTrigger);
 
@@ -16,14 +10,13 @@ export default function Home() {
       <div className={styles.aboutMeContainer}>
         <h2 className={styles.title}>About Me</h2>
         <p className={styles.aboutMeText}>
-          I'm Matt Saemrow, a former athletic trainer turned software
-          engineerwith a passion for problem-solving and teamwork.
-          <br />
-          <br />
-          My career began in athletic training, progressed to safety management,
-          and ultimately led me to software development, where I thrive on
-          building efficient solutions and tackling challenges head-on.
-          <br />
+          I'm Matt Saemrow, a former athletic trainer turned software engineer
+          with a passion for problem-solving and teamwork. I grew up on a farm,
+          where I learned the value of hard work, resilience, and finding
+          creative solutions—skills that have shaped my journey from athletic
+          training to safety management and, ultimately, software development,
+          where. I thrive in collaborative environments, embrace challenges head
+          on and am continuously learning to build impactful solutions.
           <br />
           Outside of work, I'm a husband, father, avid angler, fitness
           enthusiast, National Park lover and sports fan. Whether coding,
