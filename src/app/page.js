@@ -14,9 +14,9 @@ export default function Home() {
           with a passion for problem-solving and teamwork. I grew up on a farm,
           where I learned the value of hard work, resilience, and finding
           creative solutions—skills that have shaped my journey from athletic
-          training to safety management and, ultimately, software development,
-          where. I thrive in collaborative environments, embrace challenges head
-          on and am continuously learning to build impactful solutions.
+          training to safety management and, ultimately, software development. I
+          thrive in collaborative environments, embrace challenges head on and
+          am continuously learning to build impactful solutions.
           <br />
           Outside of work, I'm a husband, father, avid angler, fitness
           enthusiast, National Park lover and sports fan. Whether coding,
@@ -60,7 +60,7 @@ export default function Home() {
           />
           <TimelineItem
             date="2016-2022"
-            title="Atletic Trainer"
+            title="Athletic Trainer"
             description="Work as an athletic training in multiple settings including a physical therapy clinic, boarding school and warehouse"
           />
           <TimelineItem
