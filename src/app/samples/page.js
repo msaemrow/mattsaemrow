@@ -10,7 +10,7 @@ export default function WorkSample() {
         <ProjectCard
           key="Project 1"
           title="Anglers Index"
-          description="Production level application. Allows anglers to log their fish catches, review historical catch data, and particpate in a master angler catch program. Application generates custom PDF certificate if meets master angler requirements."
+          description="A production-level application for anglers to log fish catches, review historical data, and participate in a Master Angler catch program. Generates a custom PDF certificate for qualifying catches. Implemented JWT authentication for secure user authorization."
           techStack={[
             "Javascript",
             "React",
@@ -30,7 +30,7 @@ export default function WorkSample() {
         <ProjectCard
           key="Project 2"
           title="Ty's Ginseng"
-          description="Production website for small agriculture business. Build both frontend and backend. Integrated Square Checkout API for seamless payment to clients existing account. Created admin backend so client can update products as needed. Integrated SEO techniques to improve organic business reach. Added Google Analyics so client can view user traffic."
+          description="A production website built for a small agriculture business, featuring a custom frontend and backend. Integrated Square Checkout API for seamless payments and developed an admin dashboard for easy product management. Implemented SEO best practices to enhance organic reach and added Google Analytics for tracking user traffic and engagement."
           techStack={[
             "Javascript",
             "React",
@@ -44,6 +44,20 @@ export default function WorkSample() {
             "Postgresql",
           ]}
           link="https://www.tysginseng.com"
+        />
+        <ProjectCard
+          key="Project 3"
+          title="Fishing Planner"
+          description="Mobile-responsive web application that provides a 3-day weather forecast based on location and moon phase data for a selected date. Built with Next.js, leveraging API routes to fetch real-time weather and location data from the OpenWeather API. Optimized for seamless usability across small, medium, and large screens."
+          techStack={[
+            "Typescript",
+            "React",
+            "HTML5",
+            "CSS3",
+            "Next.js",
+            "Vercel",
+          ]}
+          link="https://fishing-planner.vercel.app/"
         />
       </div>
     </div>
