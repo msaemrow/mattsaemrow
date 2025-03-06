@@ -59,6 +59,13 @@ export default function WorkSample() {
           ]}
           link="https://fishing-planner.vercel.app/"
         />
+        <ProjectCard
+          key="Project 4"
+          title="CLI Password Manager"
+          description="A command-line password manager built with Python and styled using Textual for a user-friendly interface. Easily add and look up account username and passwords. Passwords are securely encrypted using a Fernet key. The app is password-protected, requiring a login each time it starts. To try it out, visit the GitHub repository and follow the setup instructions. The source code is available on a public GitHub repo."
+          techStack={["Python", "Textual", "Command Line"]}
+          link="https://github.com/msaemrow/password-manager"
+        />
       </div>
     </div>
   );
