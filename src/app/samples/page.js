@@ -7,7 +7,7 @@ export default function WorkSample() {
     <div className={styles.container}>
       <h1 className={styles.pageTitle}>Work Samples</h1>
       <div className={styles.workContainer}>
-        <ProjectCard
+        {/* <ProjectCard
           key="Project 1"
           title="Anglers Index"
           description="A production-level application for anglers to log fish catches, review historical data, and participate in a Master Angler catch program. Generates a custom PDF certificate for qualifying catches. Implemented JWT authentication for secure user authorization."
@@ -26,7 +26,7 @@ export default function WorkSample() {
             "Vercel",
           ]}
           link="https://www.anglersindex.com"
-        />
+        /> */}
         <ProjectCard
           key="Project 2"
           title="Ty's Ginseng"
